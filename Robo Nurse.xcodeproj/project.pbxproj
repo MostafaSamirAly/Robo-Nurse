@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9373ED79F148C03D0214189B /* Pods_Robo_Nurse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4F7323713EEE04A0CB3B8 /* Pods_Robo_Nurse.framework */; };
+		BF157C2D26517CA900B2AEEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF157C2C26517CA900B2AEEE /* GoogleService-Info.plist */; };
+		BF157C302651840000B2AEEE /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C2F2651840000B2AEEE /* Patient.swift */; };
+		BF157C322651841C00B2AEEE /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C312651841C00B2AEEE /* Doctor.swift */; };
+		BF157C342651842800B2AEEE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C332651842800B2AEEE /* Room.swift */; };
+		BF157C362651879200B2AEEE /* AuthViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C352651879200B2AEEE /* AuthViewmodel.swift */; };
+		BF157C38265189C600B2AEEE /* DataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C37265189C600B2AEEE /* DataLoadingVC.swift */; };
+		BF157C3C26518B0200B2AEEE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C3A26518B0200B2AEEE /* SignUpVC.swift */; };
+		BF157C3D26518B0200B2AEEE /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF157C3B26518B0200B2AEEE /* SignUpVC.xib */; };
+		BF157C4126518C9700B2AEEE /* DoctorSignUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C3F26518C9700B2AEEE /* DoctorSignUpTableViewCell.swift */; };
+		BF157C4226518C9700B2AEEE /* DoctorSignUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF157C4026518C9700B2AEEE /* DoctorSignUpTableViewCell.xib */; };
+		BF157C4726518CD200B2AEEE /* PatientSignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C4526518CD200B2AEEE /* PatientSignupTableViewCell.swift */; };
+		BF157C4826518CD200B2AEEE /* PatientSignupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF157C4626518CD200B2AEEE /* PatientSignupTableViewCell.xib */; };
+		BF157C5026518E3300B2AEEE /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C4B26518E3300B2AEEE /* PickerVC.swift */; };
+		BF157C5126518E3300B2AEEE /* PickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF157C4C26518E3300B2AEEE /* PickerVC.xib */; };
+		BF157C5226518E3400B2AEEE /* SelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C4E26518E3300B2AEEE /* SelectDateVC.swift */; };
+		BF157C5326518E3400B2AEEE /* SelectDateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF157C4F26518E3300B2AEEE /* SelectDateVC.xib */; };
+		BF157C552651902A00B2AEEE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C542651902900B2AEEE /* CircleImage.swift */; };
+		BF15FC59265171B30098DCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FC58265171B30098DCBD /* AppDelegate.swift */; };
+		BF15FC5B265171B30098DCBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FC5A265171B30098DCBD /* SceneDelegate.swift */; };
+		BF15FC62265171B40098DCBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF15FC61265171B40098DCBD /* Assets.xcassets */; };
+		BF15FC65265171B40098DCBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF15FC63265171B40098DCBD /* LaunchScreen.storyboard */; };
+		BF15FC712651721F0098DCBD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FC6F2651721F0098DCBD /* LoginVC.swift */; };
+		BF15FC722651721F0098DCBD /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF15FC702651721F0098DCBD /* LoginVC.xib */; };
+		BF15FEE3265172B00098DCBD /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEE1265172B00098DCBD /* RoundedTextField.swift */; };
+		BF15FEE4265172B00098DCBD /* TopBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEE2265172B00098DCBD /* TopBackView.swift */; };
+		BF15FEF4265173910098DCBD /* TableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEEC265173900098DCBD /* TableView+Ext.swift */; };
+		BF15FEF5265173910098DCBD /* UIScrollView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEED265173900098DCBD /* UIScrollView+Ext.swift */; };
+		BF15FEF6265173910098DCBD /* CollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEEE265173900098DCBD /* CollectionView+Ext.swift */; };
+		BF15FEF7265173910098DCBD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEEF265173900098DCBD /* UIView+Ext.swift */; };
+		BF15FEF8265173910098DCBD /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEF0265173900098DCBD /* UIImageView+Ext.swift */; };
+		BF15FEF9265173910098DCBD /* UISearchBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEF1265173900098DCBD /* UISearchBar+Ext.swift */; };
+		BF15FEFA265173910098DCBD /* UIFont+EXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEF2265173900098DCBD /* UIFont+EXt.swift */; };
+		BF15FEFB265173910098DCBD /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15FEF3265173900098DCBD /* UIViewController+Ext.swift */; };
+		BF15FF03265173D80098DCBD /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FEFD265173D70098DCBD /* Montserrat-Medium.ttf */; };
+		BF15FF04265173D80098DCBD /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FEFE265173D70098DCBD /* Montserrat-Light.ttf */; };
+		BF15FF05265173D80098DCBD /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FEFF265173D70098DCBD /* Montserrat-SemiBold.ttf */; };
+		BF15FF06265173D80098DCBD /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FF00265173D70098DCBD /* Montserrat-SemiBoldItalic.ttf */; };
+		BF15FF07265173D80098DCBD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FF01265173D70098DCBD /* Montserrat-Bold.ttf */; };
+		BF15FF08265173D80098DCBD /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15FF02265173D70098DCBD /* Montserrat-Regular.ttf */; };
+		BF1F0A5026517B9A0027CD98 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A4C26517B9A0027CD98 /* Helper.swift */; };
+		BF1F0A5126517B9A0027CD98 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A4E26517B9A0027CD98 /* UserDefaultsKeys.swift */; };
+		BF1F0A5226517B9A0027CD98 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A4F26517B9A0027CD98 /* UserDefaultsHelper.swift */; };
+		BF1F0A5826517BBB0027CD98 /* FBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A5426517BBB0027CD98 /* FBError.swift */; };
+		BF1F0A5926517BBB0027CD98 /* FireBasePatientsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A5526517BBB0027CD98 /* FireBasePatientsHelper.swift */; };
+		BF1F0A5A26517BBB0027CD98 /* FireBaseDoctorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A5626517BBB0027CD98 /* FireBaseDoctorsHelper.swift */; };
+		BF1F0A5B26517BBB0027CD98 /* FireBaseRoomsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F0A5726517BBB0027CD98 /* FireBaseRoomsHelper.swift */; };
+		BF68931C2651C42500D5FF50 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68931B2651C42500D5FF50 /* UIColor+Ext.swift */; };
+		BF96379F2651770000FFDBE6 /* BackGroundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96379D2651770000FFDBE6 /* BackGroundButton.swift */; };
+		BF9637A02651770000FFDBE6 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96379E2651770000FFDBE6 /* BorderButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3845D18D074E31F5362633D6 /* Pods-Robo Nurse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robo Nurse.release.xcconfig"; path = "Target Support Files/Pods-Robo Nurse/Pods-Robo Nurse.release.xcconfig"; sourceTree = "<group>"; };
+		93B4F7323713EEE04A0CB3B8 /* Pods_Robo_Nurse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robo_Nurse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF157C2C26517CA900B2AEEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF157C2F2651840000B2AEEE /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		BF157C312651841C00B2AEEE /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		BF157C332651842800B2AEEE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		BF157C352651879200B2AEEE /* AuthViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewmodel.swift; sourceTree = "<group>"; };
+		BF157C37265189C600B2AEEE /* DataLoadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoadingVC.swift; sourceTree = "<group>"; };
+		BF157C3A26518B0200B2AEEE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		BF157C3B26518B0200B2AEEE /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		BF157C3F26518C9700B2AEEE /* DoctorSignUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSignUpTableViewCell.swift; sourceTree = "<group>"; };
+		BF157C4026518C9700B2AEEE /* DoctorSignUpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorSignUpTableViewCell.xib; sourceTree = "<group>"; };
+		BF157C4526518CD200B2AEEE /* PatientSignupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSignupTableViewCell.swift; sourceTree = "<group>"; };
+		BF157C4626518CD200B2AEEE /* PatientSignupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientSignupTableViewCell.xib; sourceTree = "<group>"; };
+		BF157C4B26518E3300B2AEEE /* PickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
+		BF157C4C26518E3300B2AEEE /* PickerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerVC.xib; sourceTree = "<group>"; };
+		BF157C4E26518E3300B2AEEE /* SelectDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDateVC.swift; sourceTree = "<group>"; };
+		BF157C4F26518E3300B2AEEE /* SelectDateVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectDateVC.xib; sourceTree = "<group>"; };
+		BF157C542651902900B2AEEE /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		BF15FC55265171B30098DCBD /* Robo Nurse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robo Nurse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF15FC58265171B30098DCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF15FC5A265171B30098DCBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF15FC61265171B40098DCBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF15FC64265171B40098DCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF15FC66265171B40098DCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF15FC6F2651721F0098DCBD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BF15FC702651721F0098DCBD /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		BF15FEE1265172B00098DCBD /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		BF15FEE2265172B00098DCBD /* TopBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBackView.swift; sourceTree = "<group>"; };
+		BF15FEEC265173900098DCBD /* TableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEED265173900098DCBD /* UIScrollView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEEE265173900098DCBD /* CollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEEF265173900098DCBD /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEF0265173900098DCBD /* UIImageView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEF1265173900098DCBD /* UISearchBar+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEF2265173900098DCBD /* UIFont+EXt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EXt.swift"; sourceTree = "<group>"; };
+		BF15FEF3265173900098DCBD /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		BF15FEFD265173D70098DCBD /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		BF15FEFE265173D70098DCBD /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		BF15FEFF265173D70098DCBD /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		BF15FF00265173D70098DCBD /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BF15FF01265173D70098DCBD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		BF15FF02265173D70098DCBD /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		BF1F0A4C26517B9A0027CD98 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		BF1F0A4E26517B9A0027CD98 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		BF1F0A4F26517B9A0027CD98 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		BF1F0A5426517BBB0027CD98 /* FBError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBError.swift; sourceTree = "<group>"; };
+		BF1F0A5526517BBB0027CD98 /* FireBasePatientsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBasePatientsHelper.swift; sourceTree = "<group>"; };
+		BF1F0A5626517BBB0027CD98 /* FireBaseDoctorsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseDoctorsHelper.swift; sourceTree = "<group>"; };
+		BF1F0A5726517BBB0027CD98 /* FireBaseRoomsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseRoomsHelper.swift; sourceTree = "<group>"; };
+		BF68931B2651C42500D5FF50 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		BF96379D2651770000FFDBE6 /* BackGroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackGroundButton.swift; sourceTree = "<group>"; };
+		BF96379E2651770000FFDBE6 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		EB39675E90076DA5741DD967 /* Pods-Robo Nurse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robo Nurse.debug.xcconfig"; path = "Target Support Files/Pods-Robo Nurse/Pods-Robo Nurse.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF15FC52265171B30098DCBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9373ED79F148C03D0214189B /* Pods_Robo_Nurse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13505C360E80C76F53A3C518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93B4F7323713EEE04A0CB3B8 /* Pods_Robo_Nurse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B998D53EFDF205853FDAE26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB39675E90076DA5741DD967 /* Pods-Robo Nurse.debug.xcconfig */,
+				3845D18D074E31F5362633D6 /* Pods-Robo Nurse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF157C2E265183E900B2AEEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C2F2651840000B2AEEE /* Patient.swift */,
+				BF157C312651841C00B2AEEE /* Doctor.swift */,
+				BF157C332651842800B2AEEE /* Room.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF157C3926518AE100B2AEEE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C3A26518B0200B2AEEE /* SignUpVC.swift */,
+				BF157C3B26518B0200B2AEEE /* SignUpVC.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BF157C3E26518C6B00B2AEEE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C4426518CB400B2AEEE /* PatientSignUpCell */,
+				BF157C4326518C9C00B2AEEE /* DoctorSignUpCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		BF157C4326518C9C00B2AEEE /* DoctorSignUpCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C3F26518C9700B2AEEE /* DoctorSignUpTableViewCell.swift */,
+				BF157C4026518C9700B2AEEE /* DoctorSignUpTableViewCell.xib */,
+			);
+			path = DoctorSignUpCell;
+			sourceTree = "<group>";
+		};
+		BF157C4426518CB400B2AEEE /* PatientSignUpCell */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C4526518CD200B2AEEE /* PatientSignupTableViewCell.swift */,
+				BF157C4626518CD200B2AEEE /* PatientSignupTableViewCell.xib */,
+			);
+			path = PatientSignUpCell;
+			sourceTree = "<group>";
+		};
+		BF157C4926518E0B00B2AEEE /* ResuableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C4A26518E3300B2AEEE /* PickerVC */,
+				BF157C4D26518E3300B2AEEE /* SelectDateVC */,
+			);
+			path = ResuableViewController;
+			sourceTree = "<group>";
+		};
+		BF157C4A26518E3300B2AEEE /* PickerVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C4B26518E3300B2AEEE /* PickerVC.swift */,
+				BF157C4C26518E3300B2AEEE /* PickerVC.xib */,
+			);
+			path = PickerVC;
+			sourceTree = "<group>";
+		};
+		BF157C4D26518E3300B2AEEE /* SelectDateVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C4E26518E3300B2AEEE /* SelectDateVC.swift */,
+				BF157C4F26518E3300B2AEEE /* SelectDateVC.xib */,
+			);
+			path = SelectDateVC;
+			sourceTree = "<group>";
+		};
+		BF15FC4C265171B30098DCBD = {
+			isa = PBXGroup;
+			children = (
+				BF15FC57265171B30098DCBD /* Robo Nurse */,
+				BF15FC56265171B30098DCBD /* Products */,
+				9B998D53EFDF205853FDAE26 /* Pods */,
+				13505C360E80C76F53A3C518 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF15FC56265171B30098DCBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF15FC55265171B30098DCBD /* Robo Nurse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF15FC57265171B30098DCBD /* Robo Nurse */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C4926518E0B00B2AEEE /* ResuableViewController */,
+				BF15FC6C265171E40098DCBD /* AppDelegate */,
+				BF15FC6D265171FE0098DCBD /* Authentication */,
+				BF15FC73265172590098DCBD /* CustomUI */,
+				BF15FEE52651734E0098DCBD /* Extensions */,
+				BF15FEFC265173B70098DCBD /* Fonts */,
+				BF157C2E265183E900B2AEEE /* Models */,
+				BF1F0A5326517BBB0027CD98 /* FireBase */,
+				BF1F0A4B26517B6F0027CD98 /* Helper */,
+				BF15FC61265171B40098DCBD /* Assets.xcassets */,
+				BF15FC63265171B40098DCBD /* LaunchScreen.storyboard */,
+				BF15FC66265171B40098DCBD /* Info.plist */,
+				BF157C2C26517CA900B2AEEE /* GoogleService-Info.plist */,
+			);
+			path = "Robo Nurse";
+			sourceTree = "<group>";
+		};
+		BF15FC6C265171E40098DCBD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BF15FC58265171B30098DCBD /* AppDelegate.swift */,
+				BF15FC5A265171B30098DCBD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BF15FC6D265171FE0098DCBD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C352651879200B2AEEE /* AuthViewmodel.swift */,
+				BF15FC6E2651720A0098DCBD /* Login */,
+				BF157C3926518AE100B2AEEE /* SignUp */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BF15FC6E2651720A0098DCBD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BF15FC6F2651721F0098DCBD /* LoginVC.swift */,
+				BF15FC702651721F0098DCBD /* LoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BF15FC73265172590098DCBD /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C3E26518C6B00B2AEEE /* TableViewCells */,
+				BF15FC74265172650098DCBD /* CustomViews */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		BF15FC74265172650098DCBD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				BF157C542651902900B2AEEE /* CircleImage.swift */,
+				BF157C37265189C600B2AEEE /* DataLoadingVC.swift */,
+				BF96379D2651770000FFDBE6 /* BackGroundButton.swift */,
+				BF96379E2651770000FFDBE6 /* BorderButton.swift */,
+				BF15FEE1265172B00098DCBD /* RoundedTextField.swift */,
+				BF15FEE2265172B00098DCBD /* TopBackView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		BF15FEE52651734E0098DCBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF15FEEE265173900098DCBD /* CollectionView+Ext.swift */,
+				BF15FEEC265173900098DCBD /* TableView+Ext.swift */,
+				BF15FEF2265173900098DCBD /* UIFont+EXt.swift */,
+				BF15FEF0265173900098DCBD /* UIImageView+Ext.swift */,
+				BF15FEED265173900098DCBD /* UIScrollView+Ext.swift */,
+				BF15FEF1265173900098DCBD /* UISearchBar+Ext.swift */,
+				BF15FEEF265173900098DCBD /* UIView+Ext.swift */,
+				BF15FEF3265173900098DCBD /* UIViewController+Ext.swift */,
+				BF68931B2651C42500D5FF50 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF15FEFC265173B70098DCBD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BF15FF01265173D70098DCBD /* Montserrat-Bold.ttf */,
+				BF15FEFE265173D70098DCBD /* Montserrat-Light.ttf */,
+				BF15FEFD265173D70098DCBD /* Montserrat-Medium.ttf */,
+				BF15FF02265173D70098DCBD /* Montserrat-Regular.ttf */,
+				BF15FEFF265173D70098DCBD /* Montserrat-SemiBold.ttf */,
+				BF15FF00265173D70098DCBD /* Montserrat-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BF1F0A4B26517B6F0027CD98 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F0A4C26517B9A0027CD98 /* Helper.swift */,
+				BF1F0A4D26517B9A0027CD98 /* UserDefaults */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BF1F0A4D26517B9A0027CD98 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F0A4E26517B9A0027CD98 /* UserDefaultsKeys.swift */,
+				BF1F0A4F26517B9A0027CD98 /* UserDefaultsHelper.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		BF1F0A5326517BBB0027CD98 /* FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				BF1F0A5426517BBB0027CD98 /* FBError.swift */,
+				BF1F0A5526517BBB0027CD98 /* FireBasePatientsHelper.swift */,
+				BF1F0A5626517BBB0027CD98 /* FireBaseDoctorsHelper.swift */,
+				BF1F0A5726517BBB0027CD98 /* FireBaseRoomsHelper.swift */,
+			);
+			path = FireBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF15FC54265171B30098DCBD /* Robo Nurse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF15FC69265171B40098DCBD /* Build configuration list for PBXNativeTarget "Robo Nurse" */;
+			buildPhases = (
+				0C6552851C24EF3D6A74B7AD /* [CP] Check Pods Manifest.lock */,
+				BF15FC51265171B30098DCBD /* Sources */,
+				BF15FC52265171B30098DCBD /* Frameworks */,
+				BF15FC53265171B30098DCBD /* Resources */,
+				6D4D04A5810810AB36722198 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Robo Nurse";
+			productName = "Robo Nurse";
+			productReference = BF15FC55265171B30098DCBD /* Robo Nurse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF15FC4D265171B30098DCBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Mostafa Samir";
+				TargetAttributes = {
+					BF15FC54265171B30098DCBD = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BF15FC50265171B30098DCBD /* Build configuration list for PBXProject "Robo Nurse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF15FC4C265171B30098DCBD;
+			productRefGroup = BF15FC56265171B30098DCBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF15FC54265171B30098DCBD /* Robo Nurse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF15FC53265171B30098DCBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF15FF08265173D80098DCBD /* Montserrat-Regular.ttf in Resources */,
+				BF157C5326518E3400B2AEEE /* SelectDateVC.xib in Resources */,
+				BF157C4826518CD200B2AEEE /* PatientSignupTableViewCell.xib in Resources */,
+				BF157C3D26518B0200B2AEEE /* SignUpVC.xib in Resources */,
+				BF15FF06265173D80098DCBD /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				BF157C5126518E3300B2AEEE /* PickerVC.xib in Resources */,
+				BF15FF05265173D80098DCBD /* Montserrat-SemiBold.ttf in Resources */,
+				BF15FF04265173D80098DCBD /* Montserrat-Light.ttf in Resources */,
+				BF15FC722651721F0098DCBD /* LoginVC.xib in Resources */,
+				BF157C4226518C9700B2AEEE /* DoctorSignUpTableViewCell.xib in Resources */,
+				BF15FF07265173D80098DCBD /* Montserrat-Bold.ttf in Resources */,
+				BF15FC65265171B40098DCBD /* LaunchScreen.storyboard in Resources */,
+				BF157C2D26517CA900B2AEEE /* GoogleService-Info.plist in Resources */,
+				BF15FF03265173D80098DCBD /* Montserrat-Medium.ttf in Resources */,
+				BF15FC62265171B40098DCBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C6552851C24EF3D6A74B7AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Robo Nurse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D4D04A5810810AB36722198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Robo Nurse/Pods-Robo Nurse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Robo Nurse/Pods-Robo Nurse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Robo Nurse/Pods-Robo Nurse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF15FC51265171B30098DCBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF157C5026518E3300B2AEEE /* PickerVC.swift in Sources */,
+				BF15FEF9265173910098DCBD /* UISearchBar+Ext.swift in Sources */,
+				BF157C322651841C00B2AEEE /* Doctor.swift in Sources */,
+				BF9637A02651770000FFDBE6 /* BorderButton.swift in Sources */,
+				BF157C38265189C600B2AEEE /* DataLoadingVC.swift in Sources */,
+				BF1F0A5926517BBB0027CD98 /* FireBasePatientsHelper.swift in Sources */,
+				BF15FEFB265173910098DCBD /* UIViewController+Ext.swift in Sources */,
+				BF15FC59265171B30098DCBD /* AppDelegate.swift in Sources */,
+				BF157C342651842800B2AEEE /* Room.swift in Sources */,
+				BF157C302651840000B2AEEE /* Patient.swift in Sources */,
+				BF1F0A5126517B9A0027CD98 /* UserDefaultsKeys.swift in Sources */,
+				BF157C4126518C9700B2AEEE /* DoctorSignUpTableViewCell.swift in Sources */,
+				BF15FEF5265173910098DCBD /* UIScrollView+Ext.swift in Sources */,
+				BF15FEF4265173910098DCBD /* TableView+Ext.swift in Sources */,
+				BF1F0A5B26517BBB0027CD98 /* FireBaseRoomsHelper.swift in Sources */,
+				BF15FEFA265173910098DCBD /* UIFont+EXt.swift in Sources */,
+				BF1F0A5226517B9A0027CD98 /* UserDefaultsHelper.swift in Sources */,
+				BF157C4726518CD200B2AEEE /* PatientSignupTableViewCell.swift in Sources */,
+				BF157C5226518E3400B2AEEE /* SelectDateVC.swift in Sources */,
+				BF1F0A5A26517BBB0027CD98 /* FireBaseDoctorsHelper.swift in Sources */,
+				BF1F0A5026517B9A0027CD98 /* Helper.swift in Sources */,
+				BF157C362651879200B2AEEE /* AuthViewmodel.swift in Sources */,
+				BF15FC5B265171B30098DCBD /* SceneDelegate.swift in Sources */,
+				BF68931C2651C42500D5FF50 /* UIColor+Ext.swift in Sources */,
+				BF96379F2651770000FFDBE6 /* BackGroundButton.swift in Sources */,
+				BF157C3C26518B0200B2AEEE /* SignUpVC.swift in Sources */,
+				BF15FEE4265172B00098DCBD /* TopBackView.swift in Sources */,
+				BF15FEF7265173910098DCBD /* UIView+Ext.swift in Sources */,
+				BF15FEF8265173910098DCBD /* UIImageView+Ext.swift in Sources */,
+				BF15FC712651721F0098DCBD /* LoginVC.swift in Sources */,
+				BF15FEF6265173910098DCBD /* CollectionView+Ext.swift in Sources */,
+				BF157C552651902A00B2AEEE /* CircleImage.swift in Sources */,
+				BF1F0A5826517BBB0027CD98 /* FBError.swift in Sources */,
+				BF15FEE3265172B00098DCBD /* RoundedTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF15FC63265171B40098DCBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF15FC64265171B40098DCBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF15FC67265171B40098DCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF15FC68265171B40098DCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF15FC6A265171B40098DCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB39675E90076DA5741DD967 /* Pods-Robo Nurse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2G6G3FU5R;
+				INFOPLIST_FILE = "Robo Nurse/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.graduation.Robo-Nurse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF15FC6B265171B40098DCBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3845D18D074E31F5362633D6 /* Pods-Robo Nurse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2G6G3FU5R;
+				INFOPLIST_FILE = "Robo Nurse/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.graduation.Robo-Nurse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF15FC50265171B30098DCBD /* Build configuration list for PBXProject "Robo Nurse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF15FC67265171B40098DCBD /* Debug */,
+				BF15FC68265171B40098DCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF15FC69265171B40098DCBD /* Build configuration list for PBXNativeTarget "Robo Nurse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF15FC6A265171B40098DCBD /* Debug */,
+				BF15FC6B265171B40098DCBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF15FC4D265171B30098DCBD /* Project object */;
+}

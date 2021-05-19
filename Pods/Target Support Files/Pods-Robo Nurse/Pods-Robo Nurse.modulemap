@@ -1,0 +1,6 @@
+framework module Pods_Robo_Nurse {
+  umbrella header "Pods-Robo Nurse-umbrella.h"
+
+  export *
+  module * { export * }
+}

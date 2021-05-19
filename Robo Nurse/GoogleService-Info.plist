@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>427729841413-vdncf6ur14vrg4jhm5o1bfh1bh66qod3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.427729841413-vdncf6ur14vrg4jhm5o1bfh1bh66qod3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDwhRdE_Sh23Npk0PVDy8u9W3P9UZbHWfA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>427729841413</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.graduation.Robo-Nurse</string>
+	<key>PROJECT_ID</key>
+	<string>graduation1-7004a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>graduation1-7004a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:427729841413:ios:775df790b762c0228e1b6c</string>
+	<key>DATABASE_URL</key>
+	<string>https://graduation1-7004a-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

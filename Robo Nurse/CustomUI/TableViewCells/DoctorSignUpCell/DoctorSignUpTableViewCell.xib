@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="330" id="KGk-i7-Jjw" customClass="DoctorSignUpTableViewCell" customModule="Robo_Nurse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuI-Yc-atb" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ZtP-2q-0gv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-d1-kCj" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                        <rect key="frame" x="16" y="72" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="abG-LV-jQd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMi-xI-EM4" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                        <rect key="frame" x="16" y="128" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ka8-4H-1OV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-Dl-HuZ" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                        <rect key="frame" x="16" y="184" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7dj-YL-Ca2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-sU-JRm" customClass="BackGroundButton" customModule="Robo_Nurse" customModuleProvider="target">
+                        <rect key="frame" x="16" y="274" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="IgM-jY-8Gm"/>
+                        </constraints>
+                        <state key="normal" title="Sign Up"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KuI-Yc-atb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0cO-ru-a9m"/>
+                    <constraint firstItem="nMi-xI-EM4" firstAttribute="leading" secondItem="h8d-d1-kCj" secondAttribute="leading" id="6D9-Fg-XpK"/>
+                    <constraint firstItem="VBp-Dl-HuZ" firstAttribute="trailing" secondItem="h8d-d1-kCj" secondAttribute="trailing" id="O36-87-PcX"/>
+                    <constraint firstItem="VBp-Dl-HuZ" firstAttribute="top" secondItem="nMi-xI-EM4" secondAttribute="bottom" constant="16" id="Pkl-p2-Jlr"/>
+                    <constraint firstItem="h8d-d1-kCj" firstAttribute="leading" secondItem="KuI-Yc-atb" secondAttribute="leading" id="QEp-Ju-2g8"/>
+                    <constraint firstItem="nMi-xI-EM4" firstAttribute="top" secondItem="h8d-d1-kCj" secondAttribute="bottom" constant="16" id="Uuu-4i-VSD"/>
+                    <constraint firstAttribute="trailing" secondItem="KuI-Yc-atb" secondAttribute="trailing" constant="16" id="XJh-tL-GLF"/>
+                    <constraint firstItem="9ao-sU-JRm" firstAttribute="top" secondItem="VBp-Dl-HuZ" secondAttribute="bottom" constant="16" id="bgv-sD-Pj7"/>
+                    <constraint firstItem="h8d-d1-kCj" firstAttribute="top" secondItem="KuI-Yc-atb" secondAttribute="bottom" constant="16" id="cGH-dM-UQA"/>
+                    <constraint firstAttribute="bottom" secondItem="9ao-sU-JRm" secondAttribute="bottom" constant="16" id="dyn-96-29k"/>
+                    <constraint firstItem="VBp-Dl-HuZ" firstAttribute="leading" secondItem="h8d-d1-kCj" secondAttribute="leading" id="eD5-dQ-6HP"/>
+                    <constraint firstItem="nMi-xI-EM4" firstAttribute="trailing" secondItem="h8d-d1-kCj" secondAttribute="trailing" id="fE7-4K-rdE"/>
+                    <constraint firstItem="h8d-d1-kCj" firstAttribute="trailing" secondItem="KuI-Yc-atb" secondAttribute="trailing" id="llB-bv-unf"/>
+                    <constraint firstItem="9ao-sU-JRm" firstAttribute="trailing" secondItem="VBp-Dl-HuZ" secondAttribute="trailing" id="lrO-49-sv9"/>
+                    <constraint firstItem="9ao-sU-JRm" firstAttribute="leading" secondItem="VBp-Dl-HuZ" secondAttribute="leading" id="mIz-hD-zcr"/>
+                    <constraint firstItem="KuI-Yc-atb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="up9-dH-1wJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.8840579710145" y="206.25"/>
+        </tableViewCell>
+    </objects>
+</document>
