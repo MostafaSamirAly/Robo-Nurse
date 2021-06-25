@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomePageVC" customModule="Robo_Nurse" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLabel" destination="pHf-Bd-lLJ" id="mlt-eg-jqQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIK-nB-Lum">
+                    <rect key="frame" x="16" y="60" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostafa Samir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-Bd-lLJ">
+                    <rect key="frame" x="16" y="89" width="382" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to complete health care app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DED-yC-nZ2">
+                    <rect key="frame" x="16" y="421" width="382" height="64.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrR-UN-75z" customClass="BorderButton" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="16" y="501.5" width="382" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="y5u-Y2-Sx2"/>
+                    </constraints>
+                    <state key="normal" title="Profile"/>
+                    <connections>
+                        <action selector="profileBtnTapped:" destination="-1" eventType="touchUpInside" id="hdI-7b-Pgg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujx-0d-M42" customClass="BorderButton" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="16" y="567.5" width="382" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bWx-Jg-pMw"/>
+                    </constraints>
+                    <state key="normal" title="Show ID"/>
+                    <connections>
+                        <action selector="idBtnTapped:" destination="-1" eventType="touchUpInside" id="qWJ-zd-8Gh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCs-ij-S35">
+                    <rect key="frame" x="358" y="55.5" width="48" height="30"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="logout:" destination="-1" eventType="touchUpInside" id="wGW-Ga-qyk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hrR-UN-75z" firstAttribute="top" secondItem="DED-yC-nZ2" secondAttribute="bottom" constant="16" id="1i3-Ot-9bm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YIK-nB-Lum" secondAttribute="trailing" constant="16" id="1rP-at-Idn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gCs-ij-S35" secondAttribute="trailing" constant="8" id="2U2-1W-cDF"/>
+                <constraint firstItem="YIK-nB-Lum" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JwU-8g-z1C"/>
+                <constraint firstItem="Ujx-0d-M42" firstAttribute="leading" secondItem="hrR-UN-75z" secondAttribute="leading" id="Ooz-sW-Vzn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hrR-UN-75z" secondAttribute="trailing" constant="16" id="WzF-3i-D20"/>
+                <constraint firstItem="DED-yC-nZ2" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cid-oi-vBL"/>
+                <constraint firstItem="pHf-Bd-lLJ" firstAttribute="trailing" secondItem="YIK-nB-Lum" secondAttribute="trailing" id="dwX-7c-43h"/>
+                <constraint firstItem="DED-yC-nZ2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eDJ-H0-1K2"/>
+                <constraint firstItem="DED-yC-nZ2" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="fA7-A2-YxM"/>
+                <constraint firstItem="Ujx-0d-M42" firstAttribute="top" secondItem="hrR-UN-75z" secondAttribute="bottom" constant="16" id="fwe-KX-tcT"/>
+                <constraint firstItem="YIK-nB-Lum" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="gS0-8b-TKa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DED-yC-nZ2" secondAttribute="trailing" constant="16" id="p3Z-OI-2lv"/>
+                <constraint firstItem="gCs-ij-S35" firstAttribute="centerY" secondItem="YIK-nB-Lum" secondAttribute="centerY" id="tLF-Nt-BsT"/>
+                <constraint firstItem="pHf-Bd-lLJ" firstAttribute="top" secondItem="YIK-nB-Lum" secondAttribute="bottom" constant="8" id="taJ-Qm-8GY"/>
+                <constraint firstItem="Ujx-0d-M42" firstAttribute="trailing" secondItem="hrR-UN-75z" secondAttribute="trailing" id="u2t-fo-Cu7"/>
+                <constraint firstItem="hrR-UN-75z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wXJ-jL-8t5"/>
+                <constraint firstItem="pHf-Bd-lLJ" firstAttribute="leading" secondItem="YIK-nB-Lum" secondAttribute="leading" id="yv2-Ja-txA"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="70"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Ujx-0d-M42">
+            <size key="intrinsicContentSize" width="57" height="30"/>
+        </designable>
+        <designable name="hrR-UN-75z">
+            <size key="intrinsicContentSize" width="44" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

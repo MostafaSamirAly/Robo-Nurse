@@ -21,9 +21,13 @@ class FireBaseDoctorsHelper {
         }
         usersRef.child(uid).observe(.value){ (snapshot) in
             if snapshot.exists() {
+                let dict = snapshot.value as? [String:Any]
+                if let userName = dict?["name"] as? String {
+                    UserDefaultsHelper.shared.setUsername(userName)
+                }
                 completion(.success(true))
             }else {
-                completion(.success(false))
+                completion(.failure(FBError.childNotFound))
             }
         }
     }

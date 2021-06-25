@@ -35,10 +35,28 @@ struct Patient:Codable {
     let picture:String
     let uid:String
     let email:String
+    let doctor:String?
+    let medicine:String?
+    let vitalSign:[String:[String:Readings]]?
     
     private enum CodingKeys: String,CodingKey {
-        case age,name,picture,uid,gender,email
+        case age,name,picture,uid,gender,email,doctor,medicine
         case birthday = "birth_day"
         case bloodType = "blood_type"
+        case vitalSign = "vital_sign"
     }
+}
+
+//struct VitalSign: Codable {
+//    let BPM:
+//    let SPO2:[String:[String:Double]]
+//    let Temp:[String:[String:Double]]
+//}
+
+struct Readings:Codable {
+    let ppm:Double
+    let oxygen:Double
+    let temp:Double
+    let date:String
+    let time:String
 }

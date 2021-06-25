@@ -10,4 +10,5 @@ target 'Robo Nurse' do
   pod 'Firebase/Auth'
   pod 'IQKeyboardManagerSwift'
   pod 'Firebase/Storage'
+  pod 'SDWebImage'
 end

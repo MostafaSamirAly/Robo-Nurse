@@ -9,24 +9,25 @@
 import Foundation
 import FirebaseAuth
 
-enum UserType {
-    case doctor
-    case patient
+enum UserType:String {
+    case doctor = "doctor"
+    case patient = "patient"
 }
 class AuthViewmodel: NSObject {
     var userType:UserType = .patient
     var imageUrl:String = ""
+    
     func signIn(email:String,password:String,completion:@escaping(Bool)->Void) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
           guard let self = self else { return }
-            if error != nil {
+            if error == nil {
                 UserDefaultsHelper.shared.setUID(authResult?.user.uid ?? "")
                 switch self.userType {
                 case .doctor:
                     FireBaseDoctorsHelper.shared.checkUserExistance { (result) in
                         switch result {
                         case .success:
-                            self.updateUserDefaults(with: authResult?.user.uid)
+                            self.updateUserDefaults(with: authResult?.user.uid,name: "")
                             completion(true)
                         case .failure(_):
                             completion(false)
@@ -35,9 +36,8 @@ class AuthViewmodel: NSObject {
                 case .patient:
                     FireBasePatientsHelper.shared.checkUserExistance { (result) in
                         switch result {
-                            
                         case .success:
-                            
+                            self.updateUserDefaults(with: authResult?.user.uid,name: "")
                             completion(true)
                         case .failure(_):
                             completion(false)
@@ -56,7 +56,7 @@ class AuthViewmodel: NSObject {
             if let error = error {
                 completion(error)
             }else {
-                self?.updateUserDefaults(with: authResult?.user.uid)
+                self?.updateUserDefaults(with: authResult?.user.uid,name: patient.name)
                 FireBasePatientsHelper.shared.addPatient(patient: patient, uid: authResult?.user.uid ?? "1")
                 completion(nil)
             }
@@ -68,15 +68,19 @@ class AuthViewmodel: NSObject {
             if error != nil {
                 completion(error)
             }else {
-                self?.updateUserDefaults(with: authResult?.user.uid)
+                self?.updateUserDefaults(with: authResult?.user.uid, name: name)
                 FireBaseDoctorsHelper.shared.add(user: authResult?.user.uid ?? "", name: name, email: email)
                 completion(nil)
             }
         }
     }
     
-    func updateUserDefaults(with uid:String?) {
+    func updateUserDefaults(with uid:String?,name:String) {
         UserDefaultsHelper.shared.setUID(uid ?? "")
         UserDefaultsHelper.shared.setLoggedIn(true)
+        UserDefaultsHelper.shared.setUserType(userType: userType)
+        if !name.isEmpty {
+            UserDefaultsHelper.shared.setUsername(name)
+        }
     }
 }

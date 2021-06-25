@@ -28,7 +28,7 @@ class SignUpVC: DataLoadingVC {
             if let _ = error {
                 Helper.showAlert(view: self, msg: "The email address is already in use by another account")
             }else {
-                print("Patient Created")
+                self.gotoWelcome()
             }
         }
     }
@@ -41,9 +41,15 @@ class SignUpVC: DataLoadingVC {
             if let _ = error {
                 Helper.showAlert(view: self, msg: "Error Occured")
             }else {
-                print("Doctor Created")
+                self.gotoWelcome()
             }
         }
+    }
+    
+    func gotoWelcome() {
+        let nc = UINavigationController(rootViewController: WelcomePageVC())
+        nc.navigationBar.isHidden = true
+        UIApplication.shared.keyWindow?.rootViewController = nc
     }
     
     func setupTableView() {

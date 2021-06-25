@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoctorProfileVC" customModule="Robo_Nurse" customModuleProvider="target">
+            <connections>
+                <outlet property="doctorName" destination="Y5O-fT-TuW" id="naY-Ij-R10"/>
+                <outlet property="patientsTableView" destination="Aku-1H-XhD" id="yhr-yz-dUs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5O-fT-TuW">
+                    <rect key="frame" x="8" y="52" width="398" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoi-Ju-vbk">
+                    <rect key="frame" x="16" y="89" width="382" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-1H-XhD">
+                    <rect key="frame" x="16" y="129" width="382" height="651"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COw-xI-l2I" customClass="BackGroundButton" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="32" y="796" width="350" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="obc-Tw-reG"/>
+                    </constraints>
+                    <state key="normal" title="Schedule"/>
+                    <connections>
+                        <action selector="scheduleBtnTapped:" destination="-1" eventType="touchUpInside" id="g5x-bx-UuB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Aku-1H-XhD" firstAttribute="top" secondItem="Hoi-Ju-vbk" secondAttribute="bottom" constant="16" id="33p-oZ-ag2"/>
+                <constraint firstItem="Aku-1H-XhD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6NK-rp-R5w"/>
+                <constraint firstItem="COw-xI-l2I" firstAttribute="top" secondItem="Aku-1H-XhD" secondAttribute="bottom" constant="16" id="EDB-uq-Sy0"/>
+                <constraint firstItem="Hoi-Ju-vbk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FWd-H6-URx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y5O-fT-TuW" secondAttribute="trailing" constant="8" id="Hob-VC-GB0"/>
+                <constraint firstItem="Y5O-fT-TuW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="SzF-MO-QQg"/>
+                <constraint firstItem="COw-xI-l2I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="adB-ih-d5R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="COw-xI-l2I" secondAttribute="trailing" constant="32" id="bo9-0G-pF3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hoi-Ju-vbk" secondAttribute="trailing" constant="16" id="cYo-9I-mcl"/>
+                <constraint firstItem="Y5O-fT-TuW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="s0L-Hl-Opf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="COw-xI-l2I" secondAttribute="bottom" constant="16" id="vMk-CU-lW4"/>
+                <constraint firstItem="Hoi-Ju-vbk" firstAttribute="top" secondItem="Y5O-fT-TuW" secondAttribute="bottom" constant="16" id="w0u-VO-geW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aku-1H-XhD" secondAttribute="trailing" constant="16" id="y8N-2C-snz"/>
+            </constraints>
+            <point key="canvasLocation" x="20" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

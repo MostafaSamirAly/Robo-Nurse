@@ -8,12 +8,13 @@
 
 import Foundation
 
-class UserDefaultsKeys {
+enum UserDefaultsKeys {
     static let isLoggedIn = "isLoggedIn"
     static let tokenKey = "tokenKey"
-    static let userid = "id"
+    static let username = "username"
     static let uid = "uid"
     static let deviceToken = "deviceToken"
     static let signInMethod = "provider"
     static let likesArray = "likes"
+    static let userType = "user_type"
 }

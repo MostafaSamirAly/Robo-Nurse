@@ -19,9 +19,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        let nc = UINavigationController(rootViewController: LoginVC())
-        nc.navigationBar.isHidden = true
-        window?.rootViewController = nc
+        if UserDefaultsHelper.shared.getLoggedIn() {
+            let nc = UINavigationController(rootViewController: WelcomePageVC())
+            nc.navigationBar.isHidden = true
+            window?.rootViewController = nc
+        }else {
+            let nc = UINavigationController(rootViewController: LoginVC())
+            nc.navigationBar.isHidden = true
+            window?.rootViewController = nc
+        }
         window?.makeKeyAndVisible()
     }
 

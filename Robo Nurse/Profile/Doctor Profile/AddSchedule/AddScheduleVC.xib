@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddScheduleVC" customModule="Robo_Nurse" customModuleProvider="target">
+            <connections>
+                <outlet property="actionTF" destination="A7H-gP-YKZ" id="dhA-oZ-4Ou"/>
+                <outlet property="dateTF" destination="pNU-cr-T1s" id="YdK-rn-X0q"/>
+                <outlet property="roomTF" destination="FXd-Z2-vwo" id="pKz-4P-hjf"/>
+                <outlet property="timeTF" destination="v7W-Oy-toP" id="wrg-wy-bDk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-BD-YRj" customClass="TopBackView" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Xo6-nF-Gif"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="add schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFP-V0-fmr">
+                    <rect key="frame" x="16" y="120" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNU-cr-T1s" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="32" y="157" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HYZ-Pb-I9F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Room" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-Z2-vwo" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="32" y="269" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DCb-Gt-btY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Action" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7H-gP-YKZ" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="32" y="325" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="k6l-cg-wrp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbJ-ZX-lvS" customClass="BackGroundButton" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="64" y="397" width="286" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4ii-5T-DLE"/>
+                    </constraints>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="doneBtnTapped:" destination="-1" eventType="touchUpInside" id="BwI-fI-6cZ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7W-Oy-toP" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <rect key="frame" x="32" y="213" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NQu-0E-X1T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FXd-Z2-vwo" firstAttribute="leading" secondItem="pNU-cr-T1s" secondAttribute="leading" id="57a-tv-0BI"/>
+                <constraint firstItem="DpY-BD-YRj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="688-2J-u5E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rFP-V0-fmr" secondAttribute="trailing" constant="16" id="8f3-3n-gVX"/>
+                <constraint firstItem="DpY-BD-YRj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9A4-gA-Nfa"/>
+                <constraint firstItem="v7W-Oy-toP" firstAttribute="top" secondItem="pNU-cr-T1s" secondAttribute="bottom" constant="16" id="CFC-yI-1WR"/>
+                <constraint firstItem="FXd-Z2-vwo" firstAttribute="top" secondItem="v7W-Oy-toP" secondAttribute="bottom" constant="16" id="GqN-4T-EUq"/>
+                <constraint firstItem="rFP-V0-fmr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="K0W-Ib-jwA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MbJ-ZX-lvS" secondAttribute="trailing" constant="64" id="NYz-M4-hMe"/>
+                <constraint firstItem="A7H-gP-YKZ" firstAttribute="leading" secondItem="pNU-cr-T1s" secondAttribute="leading" id="Nbc-Mz-wDJ"/>
+                <constraint firstItem="v7W-Oy-toP" firstAttribute="leading" secondItem="pNU-cr-T1s" secondAttribute="leading" id="STh-ry-fwj"/>
+                <constraint firstItem="A7H-gP-YKZ" firstAttribute="trailing" secondItem="pNU-cr-T1s" secondAttribute="trailing" id="VQU-IL-Yrl"/>
+                <constraint firstItem="MbJ-ZX-lvS" firstAttribute="top" secondItem="A7H-gP-YKZ" secondAttribute="bottom" constant="32" id="W39-d2-7GF"/>
+                <constraint firstItem="pNU-cr-T1s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="bo1-yv-l21"/>
+                <constraint firstItem="A7H-gP-YKZ" firstAttribute="top" secondItem="FXd-Z2-vwo" secondAttribute="bottom" constant="16" id="cmN-2Q-PNu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DpY-BD-YRj" secondAttribute="trailing" id="e4k-Tp-hN1"/>
+                <constraint firstItem="FXd-Z2-vwo" firstAttribute="trailing" secondItem="pNU-cr-T1s" secondAttribute="trailing" id="j4h-N4-XEX"/>
+                <constraint firstItem="v7W-Oy-toP" firstAttribute="trailing" secondItem="pNU-cr-T1s" secondAttribute="trailing" id="n9Y-bY-4F8"/>
+                <constraint firstItem="pNU-cr-T1s" firstAttribute="top" secondItem="rFP-V0-fmr" secondAttribute="bottom" constant="16" id="t1p-IE-EFS"/>
+                <constraint firstItem="MbJ-ZX-lvS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="vct-s6-jjy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pNU-cr-T1s" secondAttribute="trailing" constant="32" id="xEG-q0-k72"/>
+                <constraint firstItem="rFP-V0-fmr" firstAttribute="top" secondItem="DpY-BD-YRj" secondAttribute="bottom" constant="16" id="ycH-1W-nmb"/>
+            </constraints>
+            <point key="canvasLocation" x="20" y="44"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

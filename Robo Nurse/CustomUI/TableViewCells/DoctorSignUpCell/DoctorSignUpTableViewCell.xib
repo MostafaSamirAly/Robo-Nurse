@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,44 +17,47 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuI-Yc-atb" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuI-Yc-atb" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
                         <rect key="frame" x="16" y="16" width="288" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="ZtP-2q-0gv"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" textContentType="username"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-d1-kCj" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-d1-kCj" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
                         <rect key="frame" x="16" y="72" width="288" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="abG-LV-jQd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMi-xI-EM4" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMi-xI-EM4" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
                         <rect key="frame" x="16" y="128" width="288" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="ka8-4H-1OV"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-Dl-HuZ" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-Dl-HuZ" customClass="RoundedTextField" customModule="Robo_Nurse" customModuleProvider="target">
                         <rect key="frame" x="16" y="184" width="288" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="7dj-YL-Ca2"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                     </textField>
-                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-sU-JRm" customClass="BackGroundButton" customModule="Robo_Nurse" customModuleProvider="target">
-                        <rect key="frame" x="16" y="274" width="288" height="40"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-sU-JRm" customClass="BackGroundButton" customModule="Robo_Nurse" customModuleProvider="target">
+                        <rect key="frame" x="16" y="240" width="288" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="IgM-jY-8Gm"/>
                         </constraints>
                         <state key="normal" title="Sign Up"/>
+                        <connections>
+                            <action selector="signupBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R7C-i4-oH8"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -76,6 +80,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="confirmPassTF" destination="VBp-Dl-HuZ" id="3AN-ej-Cnz"/>
+                <outlet property="emailTF" destination="h8d-d1-kCj" id="7zg-TG-4Xh"/>
+                <outlet property="nameTF" destination="KuI-Yc-atb" id="QUv-R5-1mx"/>
+                <outlet property="passTF" destination="nMi-xI-EM4" id="zpc-Z3-hWt"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="206.25"/>
         </tableViewCell>
     </objects>

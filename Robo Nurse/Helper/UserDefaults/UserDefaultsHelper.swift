@@ -37,12 +37,12 @@ class UserDefaultsHelper {
         return ref.string(forKey: UserDefaultsKeys.deviceToken)
     }
 
-    func setUserId(_ id:Int) {
-        ref.set(id, forKey: UserDefaultsKeys.userid)
+    func setUsername(_ name:String) {
+        ref.set(name, forKey: UserDefaultsKeys.username)
     }
 
-    func getUserId()->Int? {
-        return ref.integer(forKey: UserDefaultsKeys.userid)
+    func getUsername()->String? {
+        return ref.string(forKey: UserDefaultsKeys.username)
     }
     
 //    func setCustomer(response:AuthResponse,type:String) {
@@ -69,11 +69,28 @@ class UserDefaultsHelper {
         return ref.integer(forKey: UserDefaultsKeys.likesArray)
     }
     
+    func setUserType(userType:UserType) {
+        ref.setValue(userType.rawValue, forKey: UserDefaultsKeys.userType)
+    }
+    
+    func getUserType()-> UserType {
+        switch ref.string(forKey: UserDefaultsKeys.userType) {
+        case UserType.patient.rawValue:
+            return .patient
+        case UserType.doctor.rawValue:
+            return .doctor
+        default:
+            return .patient
+        }
+    }
+    
     func removeAllData() {
         ref.removeObject(forKey: UserDefaultsKeys.isLoggedIn)
         ref.removeObject(forKey: UserDefaultsKeys.tokenKey)
-        ref.removeObject(forKey: UserDefaultsKeys.userid)
+        ref.removeObject(forKey: UserDefaultsKeys.username)
         ref.removeObject(forKey: UserDefaultsKeys.signInMethod)
         ref.removeObject(forKey: UserDefaultsKeys.likesArray)
+        ref.removeObject(forKey: UserDefaultsKeys.userType)
     }
 }
+

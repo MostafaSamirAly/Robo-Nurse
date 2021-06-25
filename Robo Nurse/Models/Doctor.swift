@@ -9,5 +9,7 @@
 import Foundation
 
 struct Doctor: Codable {
-    
+    let uid:String
+    let name:String
+    let email:String
 }

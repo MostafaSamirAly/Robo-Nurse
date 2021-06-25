@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BorderButton: UIButton {
+@IBDesignable class BorderButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupview()
@@ -19,6 +19,9 @@ class BorderButton: UIButton {
         self.layer.borderColor = UIColor.blue.cgColor
         self.setTitleColor(.blue, for: .normal)
     }
-    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setupview()
+    }
 }
 

@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561ABE8F2657EA45008FA50E /* VitalSignsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561ABE8D2657EA45008FA50E /* VitalSignsTableViewCell.swift */; };
+		561ABE902657EA45008FA50E /* VitalSignsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561ABE8E2657EA45008FA50E /* VitalSignsTableViewCell.xib */; };
+		5643F6F0265EE8C600E09852 /* AddPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643F6EE265EE8C600E09852 /* AddPatientVC.swift */; };
+		5643F6F1265EE8C600E09852 /* AddPatientVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5643F6EF265EE8C600E09852 /* AddPatientVC.xib */; };
+		5643F6F5265EF3BA00E09852 /* AddScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643F6F3265EF3BA00E09852 /* AddScheduleVC.swift */; };
+		5643F6F6265EF3BA00E09852 /* AddScheduleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5643F6F4265EF3BA00E09852 /* AddScheduleVC.xib */; };
+		5643F6F8265EFA8900E09852 /* AddScheduleViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643F6F7265EFA8900E09852 /* AddScheduleViewmodel.swift */; };
+		568B29BB2685FB0000F374AA /* MedicinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B29B92685FB0000F374AA /* MedicinesVC.swift */; };
+		568B29BC2685FB0000F374AA /* MedicinesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568B29BA2685FB0000F374AA /* MedicinesVC.xib */; };
+		568B29BE2685FC2E00F374AA /* MedicinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B29BD2685FC2E00F374AA /* MedicinesViewModel.swift */; };
+		568B29C02685FE7500F374AA /* MedicinesFireBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B29BF2685FE7500F374AA /* MedicinesFireBaseHelper.swift */; };
+		568B29C22685FF0900F374AA /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B29C12685FF0900F374AA /* Medicine.swift */; };
+		56A96A4E265DA4D600C33771 /* DoctorProfileViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A96A4D265DA4D600C33771 /* DoctorProfileViewmodel.swift */; };
+		56B8D9792655A9C400366F79 /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B8D9772655A9C400366F79 /* WelcomePageVC.swift */; };
+		56B8D97A2655A9C400366F79 /* WelcomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B8D9782655A9C400366F79 /* WelcomePageVC.xib */; };
+		56B8D97E2655B47D00366F79 /* DoctorProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B8D97C2655B47D00366F79 /* DoctorProfileVC.swift */; };
+		56B8D97F2655B47D00366F79 /* DoctorProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B8D97D2655B47D00366F79 /* DoctorProfileVC.xib */; };
+		56B8D9822655B49600366F79 /* PatientProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B8D9802655B49600366F79 /* PatientProfileVC.swift */; };
+		56B8D9832655B49600366F79 /* PatientProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B8D9812655B49600366F79 /* PatientProfileVC.xib */; };
+		56B8D9862655B79D00366F79 /* PatientProfileViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B8D9852655B79D00366F79 /* PatientProfileViewmodel.swift */; };
 		9373ED79F148C03D0214189B /* Pods_Robo_Nurse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4F7323713EEE04A0CB3B8 /* Pods_Robo_Nurse.framework */; };
 		BF157C2D26517CA900B2AEEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF157C2C26517CA900B2AEEE /* GoogleService-Info.plist */; };
 		BF157C302651840000B2AEEE /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF157C2F2651840000B2AEEE /* Patient.swift */; };
@@ -61,6 +81,26 @@
 
 /* Begin PBXFileReference section */
 		3845D18D074E31F5362633D6 /* Pods-Robo Nurse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Robo Nurse.release.xcconfig"; path = "Target Support Files/Pods-Robo Nurse/Pods-Robo Nurse.release.xcconfig"; sourceTree = "<group>"; };
+		561ABE8D2657EA45008FA50E /* VitalSignsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalSignsTableViewCell.swift; sourceTree = "<group>"; };
+		561ABE8E2657EA45008FA50E /* VitalSignsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VitalSignsTableViewCell.xib; sourceTree = "<group>"; };
+		5643F6EE265EE8C600E09852 /* AddPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientVC.swift; sourceTree = "<group>"; };
+		5643F6EF265EE8C600E09852 /* AddPatientVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPatientVC.xib; sourceTree = "<group>"; };
+		5643F6F3265EF3BA00E09852 /* AddScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleVC.swift; sourceTree = "<group>"; };
+		5643F6F4265EF3BA00E09852 /* AddScheduleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddScheduleVC.xib; sourceTree = "<group>"; };
+		5643F6F7265EFA8900E09852 /* AddScheduleViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewmodel.swift; sourceTree = "<group>"; };
+		568B29B92685FB0000F374AA /* MedicinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinesVC.swift; sourceTree = "<group>"; };
+		568B29BA2685FB0000F374AA /* MedicinesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicinesVC.xib; sourceTree = "<group>"; };
+		568B29BD2685FC2E00F374AA /* MedicinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinesViewModel.swift; sourceTree = "<group>"; };
+		568B29BF2685FE7500F374AA /* MedicinesFireBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinesFireBaseHelper.swift; sourceTree = "<group>"; };
+		568B29C12685FF0900F374AA /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		56A96A4D265DA4D600C33771 /* DoctorProfileViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewmodel.swift; sourceTree = "<group>"; };
+		56B8D9772655A9C400366F79 /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
+		56B8D9782655A9C400366F79 /* WelcomePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomePageVC.xib; sourceTree = "<group>"; };
+		56B8D97C2655B47D00366F79 /* DoctorProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileVC.swift; sourceTree = "<group>"; };
+		56B8D97D2655B47D00366F79 /* DoctorProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorProfileVC.xib; sourceTree = "<group>"; };
+		56B8D9802655B49600366F79 /* PatientProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileVC.swift; sourceTree = "<group>"; };
+		56B8D9812655B49600366F79 /* PatientProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientProfileVC.xib; sourceTree = "<group>"; };
+		56B8D9852655B79D00366F79 /* PatientProfileViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewmodel.swift; sourceTree = "<group>"; };
 		93B4F7323713EEE04A0CB3B8 /* Pods_Robo_Nurse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Robo_Nurse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF157C2C26517CA900B2AEEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF157C2F2651840000B2AEEE /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
@@ -136,6 +176,85 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		561ABE8C2657E9FD008FA50E /* VitalSignTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				561ABE8D2657EA45008FA50E /* VitalSignsTableViewCell.swift */,
+				561ABE8E2657EA45008FA50E /* VitalSignsTableViewCell.xib */,
+			);
+			path = VitalSignTableCell;
+			sourceTree = "<group>";
+		};
+		5643F6ED265EE89F00E09852 /* Add Patient */ = {
+			isa = PBXGroup;
+			children = (
+				5643F6EE265EE8C600E09852 /* AddPatientVC.swift */,
+				5643F6EF265EE8C600E09852 /* AddPatientVC.xib */,
+			);
+			path = "Add Patient";
+			sourceTree = "<group>";
+		};
+		5643F6F2265EF38D00E09852 /* AddSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				5643F6F7265EFA8900E09852 /* AddScheduleViewmodel.swift */,
+				5643F6F3265EF3BA00E09852 /* AddScheduleVC.swift */,
+				5643F6F4265EF3BA00E09852 /* AddScheduleVC.xib */,
+			);
+			path = AddSchedule;
+			sourceTree = "<group>";
+		};
+		568B29B82685FAB800F374AA /* SelectMedecine */ = {
+			isa = PBXGroup;
+			children = (
+				568B29BD2685FC2E00F374AA /* MedicinesViewModel.swift */,
+				568B29B92685FB0000F374AA /* MedicinesVC.swift */,
+				568B29BA2685FB0000F374AA /* MedicinesVC.xib */,
+			);
+			path = SelectMedecine;
+			sourceTree = "<group>";
+		};
+		56A96A4C265DA4B800C33771 /* Doctor Profile */ = {
+			isa = PBXGroup;
+			children = (
+				56A96A4D265DA4D600C33771 /* DoctorProfileViewmodel.swift */,
+				56B8D97C2655B47D00366F79 /* DoctorProfileVC.swift */,
+				56B8D97D2655B47D00366F79 /* DoctorProfileVC.xib */,
+				5643F6ED265EE89F00E09852 /* Add Patient */,
+				5643F6F2265EF38D00E09852 /* AddSchedule */,
+				568B29B82685FAB800F374AA /* SelectMedecine */,
+			);
+			path = "Doctor Profile";
+			sourceTree = "<group>";
+		};
+		56B8D9762655A98B00366F79 /* Welcome Page */ = {
+			isa = PBXGroup;
+			children = (
+				56B8D9772655A9C400366F79 /* WelcomePageVC.swift */,
+				56B8D9782655A9C400366F79 /* WelcomePageVC.xib */,
+			);
+			path = "Welcome Page";
+			sourceTree = "<group>";
+		};
+		56B8D97B2655B45A00366F79 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				56B8D9842655B77B00366F79 /* PatientProfile */,
+				56A96A4C265DA4B800C33771 /* Doctor Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		56B8D9842655B77B00366F79 /* PatientProfile */ = {
+			isa = PBXGroup;
+			children = (
+				56B8D9852655B79D00366F79 /* PatientProfileViewmodel.swift */,
+				56B8D9802655B49600366F79 /* PatientProfileVC.swift */,
+				56B8D9812655B49600366F79 /* PatientProfileVC.xib */,
+			);
+			path = PatientProfile;
+			sourceTree = "<group>";
+		};
 		9B998D53EFDF205853FDAE26 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +270,7 @@
 				BF157C2F2651840000B2AEEE /* Patient.swift */,
 				BF157C312651841C00B2AEEE /* Doctor.swift */,
 				BF157C332651842800B2AEEE /* Room.swift */,
+				568B29C12685FF0900F374AA /* Medicine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +287,7 @@
 		BF157C3E26518C6B00B2AEEE /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				561ABE8C2657E9FD008FA50E /* VitalSignTableCell */,
 				BF157C4426518CB400B2AEEE /* PatientSignUpCell */,
 				BF157C4326518C9C00B2AEEE /* DoctorSignUpCell */,
 			);
@@ -239,15 +360,17 @@
 		BF15FC57265171B30098DCBD /* Robo Nurse */ = {
 			isa = PBXGroup;
 			children = (
-				BF157C4926518E0B00B2AEEE /* ResuableViewController */,
 				BF15FC6C265171E40098DCBD /* AppDelegate */,
 				BF15FC6D265171FE0098DCBD /* Authentication */,
+				56B8D9762655A98B00366F79 /* Welcome Page */,
+				56B8D97B2655B45A00366F79 /* Profile */,
 				BF15FC73265172590098DCBD /* CustomUI */,
 				BF15FEE52651734E0098DCBD /* Extensions */,
 				BF15FEFC265173B70098DCBD /* Fonts */,
 				BF157C2E265183E900B2AEEE /* Models */,
 				BF1F0A5326517BBB0027CD98 /* FireBase */,
 				BF1F0A4B26517B6F0027CD98 /* Helper */,
+				BF157C4926518E0B00B2AEEE /* ResuableViewController */,
 				BF15FC61265171B40098DCBD /* Assets.xcassets */,
 				BF15FC63265171B40098DCBD /* LaunchScreen.storyboard */,
 				BF15FC66265171B40098DCBD /* Info.plist */,
@@ -360,6 +483,7 @@
 				BF1F0A5526517BBB0027CD98 /* FireBasePatientsHelper.swift */,
 				BF1F0A5626517BBB0027CD98 /* FireBaseDoctorsHelper.swift */,
 				BF1F0A5726517BBB0027CD98 /* FireBaseRoomsHelper.swift */,
+				568B29BF2685FE7500F374AA /* MedicinesFireBaseHelper.swift */,
 			);
 			path = FireBase;
 			sourceTree = "<group>";
@@ -393,7 +517,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Mostafa Samir";
 				TargetAttributes = {
 					BF15FC54265171B30098DCBD = {
@@ -426,15 +550,22 @@
 			files = (
 				BF15FF08265173D80098DCBD /* Montserrat-Regular.ttf in Resources */,
 				BF157C5326518E3400B2AEEE /* SelectDateVC.xib in Resources */,
+				561ABE902657EA45008FA50E /* VitalSignsTableViewCell.xib in Resources */,
 				BF157C4826518CD200B2AEEE /* PatientSignupTableViewCell.xib in Resources */,
+				5643F6F6265EF3BA00E09852 /* AddScheduleVC.xib in Resources */,
 				BF157C3D26518B0200B2AEEE /* SignUpVC.xib in Resources */,
+				568B29BC2685FB0000F374AA /* MedicinesVC.xib in Resources */,
+				56B8D97A2655A9C400366F79 /* WelcomePageVC.xib in Resources */,
 				BF15FF06265173D80098DCBD /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				BF157C5126518E3300B2AEEE /* PickerVC.xib in Resources */,
 				BF15FF05265173D80098DCBD /* Montserrat-SemiBold.ttf in Resources */,
+				56B8D9832655B49600366F79 /* PatientProfileVC.xib in Resources */,
 				BF15FF04265173D80098DCBD /* Montserrat-Light.ttf in Resources */,
 				BF15FC722651721F0098DCBD /* LoginVC.xib in Resources */,
+				5643F6F1265EE8C600E09852 /* AddPatientVC.xib in Resources */,
 				BF157C4226518C9700B2AEEE /* DoctorSignUpTableViewCell.xib in Resources */,
 				BF15FF07265173D80098DCBD /* Montserrat-Bold.ttf in Resources */,
+				56B8D97F2655B47D00366F79 /* DoctorProfileVC.xib in Resources */,
 				BF15FC65265171B40098DCBD /* LaunchScreen.storyboard in Resources */,
 				BF157C2D26517CA900B2AEEE /* GoogleService-Info.plist in Resources */,
 				BF15FF03265173D80098DCBD /* Montserrat-Medium.ttf in Resources */,
@@ -491,22 +622,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568B29BE2685FC2E00F374AA /* MedicinesViewModel.swift in Sources */,
 				BF157C5026518E3300B2AEEE /* PickerVC.swift in Sources */,
 				BF15FEF9265173910098DCBD /* UISearchBar+Ext.swift in Sources */,
+				568B29BB2685FB0000F374AA /* MedicinesVC.swift in Sources */,
 				BF157C322651841C00B2AEEE /* Doctor.swift in Sources */,
 				BF9637A02651770000FFDBE6 /* BorderButton.swift in Sources */,
+				5643F6F0265EE8C600E09852 /* AddPatientVC.swift in Sources */,
 				BF157C38265189C600B2AEEE /* DataLoadingVC.swift in Sources */,
+				5643F6F8265EFA8900E09852 /* AddScheduleViewmodel.swift in Sources */,
 				BF1F0A5926517BBB0027CD98 /* FireBasePatientsHelper.swift in Sources */,
+				568B29C02685FE7500F374AA /* MedicinesFireBaseHelper.swift in Sources */,
 				BF15FEFB265173910098DCBD /* UIViewController+Ext.swift in Sources */,
+				56A96A4E265DA4D600C33771 /* DoctorProfileViewmodel.swift in Sources */,
+				56B8D9822655B49600366F79 /* PatientProfileVC.swift in Sources */,
 				BF15FC59265171B30098DCBD /* AppDelegate.swift in Sources */,
 				BF157C342651842800B2AEEE /* Room.swift in Sources */,
 				BF157C302651840000B2AEEE /* Patient.swift in Sources */,
 				BF1F0A5126517B9A0027CD98 /* UserDefaultsKeys.swift in Sources */,
 				BF157C4126518C9700B2AEEE /* DoctorSignUpTableViewCell.swift in Sources */,
+				5643F6F5265EF3BA00E09852 /* AddScheduleVC.swift in Sources */,
 				BF15FEF5265173910098DCBD /* UIScrollView+Ext.swift in Sources */,
 				BF15FEF4265173910098DCBD /* TableView+Ext.swift in Sources */,
 				BF1F0A5B26517BBB0027CD98 /* FireBaseRoomsHelper.swift in Sources */,
+				56B8D9862655B79D00366F79 /* PatientProfileViewmodel.swift in Sources */,
 				BF15FEFA265173910098DCBD /* UIFont+EXt.swift in Sources */,
+				56B8D9792655A9C400366F79 /* WelcomePageVC.swift in Sources */,
+				56B8D97E2655B47D00366F79 /* DoctorProfileVC.swift in Sources */,
 				BF1F0A5226517B9A0027CD98 /* UserDefaultsHelper.swift in Sources */,
 				BF157C4726518CD200B2AEEE /* PatientSignupTableViewCell.swift in Sources */,
 				BF157C5226518E3400B2AEEE /* SelectDateVC.swift in Sources */,
@@ -514,12 +656,14 @@
 				BF1F0A5026517B9A0027CD98 /* Helper.swift in Sources */,
 				BF157C362651879200B2AEEE /* AuthViewmodel.swift in Sources */,
 				BF15FC5B265171B30098DCBD /* SceneDelegate.swift in Sources */,
+				568B29C22685FF0900F374AA /* Medicine.swift in Sources */,
 				BF68931C2651C42500D5FF50 /* UIColor+Ext.swift in Sources */,
 				BF96379F2651770000FFDBE6 /* BackGroundButton.swift in Sources */,
 				BF157C3C26518B0200B2AEEE /* SignUpVC.swift in Sources */,
 				BF15FEE4265172B00098DCBD /* TopBackView.swift in Sources */,
 				BF15FEF7265173910098DCBD /* UIView+Ext.swift in Sources */,
 				BF15FEF8265173910098DCBD /* UIImageView+Ext.swift in Sources */,
+				561ABE8F2657EA45008FA50E /* VitalSignsTableViewCell.swift in Sources */,
 				BF15FC712651721F0098DCBD /* LoginVC.swift in Sources */,
 				BF15FEF6265173910098DCBD /* CollectionView+Ext.swift in Sources */,
 				BF157C552651902A00B2AEEE /* CircleImage.swift in Sources */,
@@ -568,6 +712,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -628,6 +773,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

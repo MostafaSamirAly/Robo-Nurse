@@ -88,7 +88,10 @@ class PatientSignupTableViewCell: UITableViewCell {
                                       name: self.nameTF.text ?? "",
                                       picture: url,
                                       uid: "",
-                                      email: self.emailTF.text ?? "" )
+                                      email: self.emailTF.text ?? "",
+                                      doctor: nil,
+                                      medicine: nil,
+                                      vitalSign: nil )
                 vc.signUpPatient(with: patient, password: self.passwordTF.text ?? "")
             }else {
                 vc.dismissLoadingView()

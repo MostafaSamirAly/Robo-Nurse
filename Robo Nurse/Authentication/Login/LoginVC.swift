@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginVC: DataLoadingVC {
-
+    
     @IBOutlet weak var emailTF: RoundedTextField!
     @IBOutlet weak var passTF: RoundedTextField!
     @IBOutlet weak var doctorsRadio: UIButton!
@@ -39,12 +39,15 @@ class LoginVC: DataLoadingVC {
             showLoadingView()
             viewmodel.signIn(email: emailTF.text ?? "",
                              password: passTF.text ?? "") { [weak self] (login) in
-                                self?.dismissLoadingView()
-                                if login {
-                                    print("Logged in Successfully")
-                                }else {
-                                    print("invalid email or password")
-                                }
+                guard let self = self else { return }
+                self.dismissLoadingView()
+                if login {
+                    let nc = UINavigationController(rootViewController: WelcomePageVC())
+                    nc.navigationBar.isHidden = true
+                    UIApplication.shared.keyWindow?.rootViewController = nc
+                }else {
+                    Helper.showAlert(view: self, msg: "Invalid Email or Password")
+                }
             }
         }
     }

@@ -7,10 +7,10 @@
 //
 
 import UIKit
-//import SDWebImage
+import SDWebImage
 
 extension UIImageView {
-//    func setImage(with url:String) {
-//        self.sd_setImage(with: URL(string: url), placeholderImage: #imageLiteral(resourceName: "default-image-thumbnail"), options: .progressiveLoad, context: [:])
-//    }
+    func setImage(with url:String) {
+        self.sd_setImage(with: URL(string: url), placeholderImage: #imageLiteral(resourceName: "profile"), options: .progressiveLoad, context: [:])
+    }
 }
