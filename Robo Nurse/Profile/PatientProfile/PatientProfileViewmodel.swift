@@ -34,7 +34,7 @@ class PatientProfileViewModel: NSObject {
                     readings.append(reading)
                 }
             }
-            readings.sort { $0.date > $1.date && $0.time > $1.time }
+            readings.sort { (($0.date ?? "") > ($1.date ?? "")) && (($0.time ?? "") > ($1.time ?? "")) }
         }
     }
 }

@@ -23,9 +23,9 @@ class VitalSignsTableViewCell: UITableViewCell {
     func setup(with reading:Readings) {
         labels[0].text = reading.date
         labels[1].text = reading.time
-        labels[2].text = reading.temp.description
-        labels[3].text = reading.oxygen.description
-        labels[4].text = reading.ppm.description
+        labels[2].text = reading.temp?.description
+        labels[3].text = reading.oxygen?.description
+        labels[4].text = reading.ppm?.description
     }
     
 }

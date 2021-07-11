@@ -54,9 +54,9 @@ struct Patient:Codable {
 //}
 
 struct Readings:Codable {
-    let ppm:Double
-    let oxygen:Double
-    let temp:Double
-    let date:String
-    let time:String
+    let ppm:Double?
+    let oxygen:Double?
+    let temp:Double?
+    let date:String?
+    let time:String?
 }

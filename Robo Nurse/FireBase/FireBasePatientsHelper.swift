@@ -102,6 +102,7 @@ class FireBasePatientsHelper {
             "action":action
         ]
         )
+        FireBaseRoomsHelper.shared.add(patient: uid, to: room)
     }
     func addDoctorToPatient(with uid:String) {
         patientsRef.child(uid).updateChildValues(["doctor":UserDefaultsHelper.shared.getUID() ?? "1"])

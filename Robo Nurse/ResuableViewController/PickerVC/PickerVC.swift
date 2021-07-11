@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PickerDelegate:class {
+protocol PickerDelegate:AnyObject {
     func didSelect(string:String)
 }
 

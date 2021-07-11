@@ -78,8 +78,8 @@
             filePath = "Robo Nurse/FireBase/FireBasePatientsHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "addMedecineToPatient(name:uid:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -129,6 +129,133 @@
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "addMedecineToPatient(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C898E28-F842-4A37-B905-EF592E19EC54"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Robo Nurse/FireBase/FireBaseRoomsHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getRooms(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BED7FC81-B527-4CB3-89B8-1467ECEADB7A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Robo Nurse/Profile/Doctor Profile/AddSchedule/AddScheduleViewmodel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getRooms(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BED7FC81-B527-4CB3-89B8-1467ECEADB7A - b86799540521165d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Robo_Nurse.Room&gt;, Swift.Error&gt;) -&gt; () in Robo_Nurse.AddScheduleViewmodel.getRooms(completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Robo Nurse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macstoreegypt/Desktop/Robo%20Nurse/Robo%20Nurse/Profile/Doctor%20Profile/AddSchedule/AddScheduleViewmodel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "379">
+               </Location>
+               <Location
+                  uuid = "BED7FC81-B527-4CB3-89B8-1467ECEADB7A - c4d750ec67cca35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Robo_Nurse.Room) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;Swift.Array&lt;Robo_Nurse.Room&gt;, Swift.Error&gt;) -&gt; () in Robo_Nurse.AddScheduleViewmodel.getRooms(completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Robo Nurse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macstoreegypt/Desktop/Robo%20Nurse/Robo%20Nurse/Profile/Doctor%20Profile/AddSchedule/AddScheduleViewmodel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "BED7FC81-B527-4CB3-89B8-1467ECEADB7A - f0579589ba70694f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Robo_Nurse.Room) -&gt; Swift.String in closure #1 (Swift.Result&lt;Swift.Array&lt;Robo_Nurse.Room&gt;, Swift.Error&gt;) -&gt; () in Robo_Nurse.AddScheduleViewmodel.getRooms(completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Robo Nurse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macstoreegypt/Desktop/Robo%20Nurse/Robo%20Nurse/Profile/Doctor%20Profile/AddSchedule/AddScheduleViewmodel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0B714B4-C75F-4E52-B4CC-749C2E29DB23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Robo Nurse/Profile/Doctor Profile/AddSchedule/AddScheduleVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A703BEFC-5891-4B9E-AA0D-0A68EF7CC636"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Robo Nurse/FireBase/FireBaseRoomsHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getRooms(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60F9763C-AE5A-494C-8255-04E99BF28808"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Robo Nurse/FireBase/FireBaseRoomsHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getRooms(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

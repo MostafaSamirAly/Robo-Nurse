@@ -11,4 +11,5 @@ import Foundation
 struct Room: Codable {
     let roomName:String
     let patient:String?
+    let index:Int?
 }

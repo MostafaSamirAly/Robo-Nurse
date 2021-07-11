@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DatePickerDelegate:class {
+protocol DatePickerDelegate: AnyObject {
     func didSelect(date:String)
 }
 
@@ -25,7 +25,7 @@ class SelectDateVC: UIViewController {
         let tapGesture = UITapGestureRecognizer(target:self, action: #selector(dismissSelf))
         view.addGestureRecognizer(tapGesture)
         
-        datePicker.maximumDate = Date()
+        datePicker.minimumDate = Date()
     }
     
     
